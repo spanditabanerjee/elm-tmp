@@ -7,7 +7,7 @@ body, html {
 }
 
 header {
-    background: #140249; 
+    background: linear-gradient(to right, #1d0662, #143378, #1d0662);; 
     color: white;
     padding: 25px 0; 
     position: fixed;
@@ -33,7 +33,7 @@ header .logo img {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 10px; 
+    gap: 2px; 
     margin: 0;
     padding: 0;
     justify-content: flex-end;
@@ -47,7 +47,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -56,39 +56,58 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-
-
 section {
     padding: 80px 20px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 #hero {
     background: url('images/bgImg1.png') no-repeat center center/cover;
     color: white;
     padding-top: 100px;
-    transition: background 0.5s, color 0.5s;
+    transition: background 1.5s, color 1.5s;
 }
 
 #hero:hover {
     background: url('images/bgImg2.png') no-repeat center center/cover;
 }
 
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    transform: translateY(-100px); /* Shift the text upwards */
+}
+
 #hero h1 {
     font-size: 7rem;
-    margin-bottom: 8px;
-    transition: color 0.5s;
+    margin-bottom: 6px;
+    transition: color 1.5s;
 }
 
 #hero p {
     font-size: 6rem;
     margin-top: 0;
-    transition: color 0.5s;
+    margin-bottom: 5px;
+    transition: color 1.5s;
 }
+
+#hero .secondary-text {
+    font-size: 3rem; 
+    margin-top: 0;
+    font-weight: normal; 
+    opacity: 0; 
+    transition: opacity 1.5s; 
+}
+
+#hero:hover .secondary-text {
+    opacity: 1; 
+}
+
 
 
 #hero .cta-button {
