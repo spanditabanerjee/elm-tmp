@@ -7,9 +7,9 @@ body, html {
 }
 
 header {
-    background: #140249; /* Change this to your desired background color */
+    background: #140249; 
     color: white;
-    padding: 20px 0; /* Increase the padding to make the header taller */
+    padding: 25px 0; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,7 +27,7 @@ header .container {
 }
 
 header .logo img {
-    height: 50px; /* Adjust this if needed for your logo size */
+    height: 50px; 
 }
 
 header nav ul {
@@ -37,6 +37,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     justify-content: flex-end;
+    margin-right: -100px;
 }
 
 header nav ul li {
@@ -51,9 +52,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #575757;
+    background: #b5ccd9;
     border-radius: 5px;
 }
+
+
 
 section {
     padding: 80px 20px;
