@@ -7,7 +7,7 @@ body, html {
 }
 
 header {
-    background: linear-gradient(to right, #1d0662, #143378, #1d0662);; 
+    background: linear-gradient(to right, #1d0662, #143378, #1d0662); 
     color: white;
     padding: 25px 0; 
     position: fixed;
@@ -67,33 +67,32 @@ section {
 
 #hero {
     background: url('images/bgImg1.png') no-repeat center center/cover;
+    position: relative;
     color: white;
     padding-top: 100px;
     transition: background 1.5s, color 1.5s;
 }
 
-#hero:hover {
-    background: url('images/bgImg2.png') no-repeat center center/cover;
-}
-
 #hero .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) */
-    transform: translateY(-100px); /* Shift the text upwards */
+    align-items: flex-start;
+    transform: translateY(-100px);
+}
+
+#hero h1, #hero p {
+    transition: color 1.5s;
 }
 
 #hero h1 {
     font-size: 7rem;
     margin-bottom: 6px;
-    transition: color 1.5s;
 }
 
 #hero p {
     font-size: 6rem;
     margin-top: 0;
     margin-bottom: 5px;
-    transition: color 1.5s;
 }
 
 #hero .secondary-text {
@@ -104,11 +103,9 @@ section {
     transition: opacity 1.5s; 
 }
 
-#hero:hover .secondary-text {
+#hero.hover-effect .secondary-text {
     opacity: 1; 
 }
-
-
 
 #hero .cta-button {
     background: #f7941d;
@@ -139,4 +136,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+#hero.hover-effect {
+    background: url('images/bgImg2.png') no-repeat center center/cover;
 }
